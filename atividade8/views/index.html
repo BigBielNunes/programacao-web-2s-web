@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Calculadora</h1>
+    <form action="/calcular" method="post">
+      <div class="mb-3">
+        <label for="numA" class="form-label">Número A:</label>
+        <input type="text" name="numA" id="numA" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="numB" class="form-label">Número B:</label>
+        <input type="text" name="numB" id="numB" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="operacao" class="form-label">Operação:</label>
+        <select name="operacao" id="operacao" class="form-select">
+          <option value="+">Soma</option>
+          <option value="-">Subtração</option>
+          <option value="*">Multiplicação</option>
+          <option value="/">Divisão</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Calcular</button>
+    </form>
+  </div>
+</body>
+</html>
